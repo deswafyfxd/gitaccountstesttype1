@@ -61,7 +61,7 @@ def main():
             suspended_accounts.append(username)
     
     if suspended_accounts:
-        message = f"Suspended accounts found: {', '.join(suspended_accounts)}"
+        message = f"Suspended accounts found on Second 50: {', '.join(suspended_accounts)}"
         send_discord_message(message)
 
 if __name__ == "__main__":
