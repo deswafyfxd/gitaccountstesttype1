@@ -35,7 +35,6 @@ usernames = [
     "username146", "username147", "username148", "username149", "username150"
 ]
 
-
 # Discord webhook URL
 webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
 
