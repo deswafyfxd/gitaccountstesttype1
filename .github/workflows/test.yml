@@ -35,13 +35,13 @@ jobs:
     - name: Wait for 60 seconds
       run: sleep 60
 
-    - name: Run check_15_accounts.py
+    - name: Run Second_50.py
       run: |
-        python check_15_accounts.py
+        python Second_50.py
 
     - name: Wait for another 60 seconds
       run: sleep 60
 
-    - name: Run check_150_accounts.py
+    - name: Run Third_50.py
       run: |
-        python check_150_accounts.py
+        python Third_50.py
