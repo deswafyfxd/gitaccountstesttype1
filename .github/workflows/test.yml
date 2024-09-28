@@ -27,8 +27,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+    
+    - name: Run First_50.py 
       run: |
-        python check_accounts.py
+        python First_50.py
         
     - name: Wait for 60 seconds
       run: sleep 60
