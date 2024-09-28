@@ -45,7 +45,10 @@ jobs:
     - name: Run Third_50.py
       run: |
         python Third_50.py
-
+    
+    - name: Wait for another 60 seconds
+      run: sleep 60
+      
     - name: Run Forth_50.py 
       run: |
         python Fourth_50.py
