@@ -29,3 +29,17 @@ jobs:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       run: |
         python check_accounts.py
+        
+    - name: Wait for 60 seconds
+      run: sleep 60
+
+    - name: Run check_15_accounts.py
+      run: |
+      python check_15_accounts.py
+
+    - name: Wait for another 60 seconds
+      run: sleep 60
+
+    - name: Run check_150_accounts.py
+      run: |
+      python check_150_accounts.py
